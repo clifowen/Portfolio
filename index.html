@@ -4,83 +4,62 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Name | Developer & Creator</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- Preload fonts -->
+  <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </head>
 <body>
 
-  <!-- Custom cursor -->
   <div id="cursor"></div>
   <div id="cursor-trail"></div>
-
-  <!-- Particle canvas -->
   <canvas id="bg-canvas"></canvas>
-
-  <!-- Ambient blobs -->
   <div class="mesh-blob blob1"></div>
   <div class="mesh-blob blob2"></div>
   <div class="mesh-blob blob3"></div>
 
-  <!-- ── NAV ── -->
   <nav>
     <a href="#hero" class="nav-logo">
       <div class="avatar">✦</div>
       <span class="logo-text">Your Name</span>
     </a>
-
     <ul class="nav-menu" id="nav-menu">
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-
     <button class="hamburger" id="hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
   </nav>
 
-  <!-- ── HERO ── -->
   <section id="hero">
     <div class="hero-content">
       <h1 class="hero-name">Your<br/>Name</h1>
-
       <p class="hero-title">
         <span id="typed-title"></span><span class="typing-cursor"></span>
       </p>
-
       <p class="hero-desc">
         I'm a student developer passionate about crafting digital experiences.
         I love building intuitive web apps, exploring new technologies, and
         turning creative ideas into accessible tools.
       </p>
-
       <div class="hero-btns">
         <a href="#projects" class="btn-primary">View My Work</a>
         <a href="#contact" class="btn-ghost">Get In Touch</a>
       </div>
     </div>
-
     <div class="scroll-hint">
       <span>scroll</span>
       <div class="scroll-line"></div>
     </div>
   </section>
 
-  <!-- ── ABOUT ── -->
   <section id="about">
     <div class="section-label reveal">/ about me</div>
     <h2 class="section-title reveal">Who I am</h2>
-
     <div class="about-grid">
-      <!-- Profile image -->
       <div class="about-image-wrap reveal">
         <div class="about-image-frame">
-          <!--
-            Replace the div below with an <img> tag pointing to your photo:
-            <img src="assets/profile.jpg" alt="Your Name" />
-          -->
           <div class="img-placeholder">🧑‍💻</div>
           <div class="about-badge">
             <strong>Open to Work</strong>
@@ -89,8 +68,6 @@
         </div>
         <div class="about-image-glow"></div>
       </div>
-
-      <!-- Text content -->
       <div class="about-text">
         <div class="section-divider reveal"></div>
         <p class="reveal">
@@ -106,7 +83,6 @@
         <p class="reveal">
           I believe great software is not just functional — it's <em style="color:var(--blue3)">felt</em>.
         </p>
-
         <div class="about-skills reveal">
           <span class="skill-tag">React</span>
           <span class="skill-tag">Next.js</span>
@@ -122,11 +98,9 @@
     </div>
   </section>
 
-  <!-- ── PROJECTS ── -->
   <section id="projects">
     <div class="section-label reveal">/ selected work</div>
     <h2 class="section-title reveal">Projects</h2>
-
     <div class="projects-grid">
 
       <div class="project-card reveal">
@@ -204,7 +178,6 @@
     </div>
   </section>
 
-  <!-- ── CONTACT ── -->
   <section id="contact">
     <div class="section-label reveal">/ get in touch</div>
     <h2 class="section-title reveal">Let's Build<br/>Something</h2>
@@ -212,7 +185,6 @@
       Have a project in mind, a question, or just want to say hello?
       My inbox is always open. I'll get back to you as soon as I can.
     </p>
-
     <div class="contact-links reveal">
       <a href="mailto:you@email.com" class="contact-link">
         <span>✉</span> Email Me
@@ -223,17 +195,16 @@
       <a href="https://linkedin.com" target="_blank" class="contact-link">
         <span>in</span> LinkedIn
       </a>
-      <a href="assets/resume.pdf" target="_blank" class="contact-link btn-primary">
+      <a href="resume.pdf" target="_blank" class="contact-link btn-primary">
         View Resume
       </a>
     </div>
   </section>
 
-  <!-- ── FOOTER ── -->
   <footer>
     <p>Designed & Built by <span style="color:var(--blue3)">Your Name</span> · 2025</p>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
