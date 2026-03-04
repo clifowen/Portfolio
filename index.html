@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Developer & Creator</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Preload fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-trail"></div>
+
+  <!-- Particle canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Ambient blobs -->
+  <div class="mesh-blob blob1"></div>
+  <div class="mesh-blob blob2"></div>
+  <div class="mesh-blob blob3"></div>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <a href="#hero" class="nav-logo">
+      <div class="avatar">✦</div>
+      <span class="logo-text">Your Name</span>
+    </a>
+
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1 class="hero-name">Your<br/>Name</h1>
+
+      <p class="hero-title">
+        <span id="typed-title"></span><span class="typing-cursor"></span>
+      </p>
+
+      <p class="hero-desc">
+        I'm a student developer passionate about crafting digital experiences.
+        I love building intuitive web apps, exploring new technologies, and
+        turning creative ideas into accessible tools.
+      </p>
+
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about">
+    <div class="section-label reveal">/ about me</div>
+    <h2 class="section-title reveal">Who I am</h2>
+
+    <div class="about-grid">
+      <!-- Profile image -->
+      <div class="about-image-wrap reveal">
+        <div class="about-image-frame">
+          <!--
+            Replace the div below with an <img> tag pointing to your photo:
+            <img src="assets/profile.jpg" alt="Your Name" />
+          -->
+          <div class="img-placeholder">🧑‍💻</div>
+          <div class="about-badge">
+            <strong>Open to Work</strong>
+            Available for opportunities
+          </div>
+        </div>
+        <div class="about-image-glow"></div>
+      </div>
+
+      <!-- Text content -->
+      <div class="about-text">
+        <div class="section-divider reveal"></div>
+        <p class="reveal">
+          Hey! I'm a student developer based somewhere on this beautiful planet,
+          passionate about building digital experiences that actually matter.
+          I thrive at the intersection of clean code and thoughtful design.
+        </p>
+        <p class="reveal">
+          When I'm not pushing pixels or debugging APIs, you'll find me exploring
+          new frameworks, contributing to open source, or nerding out on the
+          latest in AI and machine learning.
+        </p>
+        <p class="reveal">
+          I believe great software is not just functional — it's <em style="color:var(--blue3)">felt</em>.
+        </p>
+
+        <div class="about-skills reveal">
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Next.js</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">TailwindCSS</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects">
+    <div class="section-label reveal">/ selected work</div>
+    <h2 class="section-title reveal">Projects</h2>
+
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="project-icon">🌐</div>
+        <h3>Project One</h3>
+        <p>A full-stack web application built to solve real-world problems with a clean, intuitive interface and robust backend architecture.</p>
+        <div class="project-tags">
+          <span class="project-tag">React</span>
+          <span class="project-tag">Node.js</span>
+          <span class="project-tag">MongoDB</span>
+        </div>
+        <a href="#" class="project-link">View Project →</a>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-icon">🤖</div>
+        <h3>AI Tool</h3>
+        <p>An intelligent assistant that leverages large language models to automate repetitive tasks and surface meaningful insights.</p>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">FastAPI</span>
+          <span class="project-tag">OpenAI</span>
+        </div>
+        <a href="#" class="project-link">View Project →</a>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-icon">📱</div>
+        <h3>Mobile App</h3>
+        <p>Cross-platform mobile application delivering a seamless experience across iOS and Android with offline-first capabilities.</p>
+        <div class="project-tags">
+          <span class="project-tag">React Native</span>
+          <span class="project-tag">Expo</span>
+          <span class="project-tag">SQLite</span>
+        </div>
+        <a href="#" class="project-link">View Project →</a>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-icon">⚡</div>
+        <h3>Open Source Library</h3>
+        <p>A lightweight, zero-dependency utility library published to npm with comprehensive docs and 100% test coverage.</p>
+        <div class="project-tags">
+          <span class="project-tag">TypeScript</span>
+          <span class="project-tag">npm</span>
+          <span class="project-tag">Jest</span>
+        </div>
+        <a href="#" class="project-link">View on GitHub →</a>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-icon">🎨</div>
+        <h3>Design System</h3>
+        <p>A cohesive component library and design token system that brings consistency and speed to every new project.</p>
+        <div class="project-tags">
+          <span class="project-tag">Figma</span>
+          <span class="project-tag">Storybook</span>
+          <span class="project-tag">CSS</span>
+        </div>
+        <a href="#" class="project-link">View Project →</a>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-icon">📊</div>
+        <h3>Analytics Dashboard</h3>
+        <p>Real-time data visualization dashboard processing thousands of events per second with interactive charts and drill-downs.</p>
+        <div class="project-tags">
+          <span class="project-tag">Next.js</span>
+          <span class="project-tag">D3.js</span>
+          <span class="project-tag">Redis</span>
+        </div>
+        <a href="#" class="project-link">View Project →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="section-label reveal">/ get in touch</div>
+    <h2 class="section-title reveal">Let's Build<br/>Something</h2>
+    <p class="reveal">
+      Have a project in mind, a question, or just want to say hello?
+      My inbox is always open. I'll get back to you as soon as I can.
+    </p>
+
+    <div class="contact-links reveal">
+      <a href="mailto:you@email.com" class="contact-link">
+        <span>✉</span> Email Me
+      </a>
+      <a href="https://github.com" target="_blank" class="contact-link">
+        <span>⌥</span> GitHub
+      </a>
+      <a href="https://linkedin.com" target="_blank" class="contact-link">
+        <span>in</span> LinkedIn
+      </a>
+      <a href="assets/resume.pdf" target="_blank" class="contact-link btn-primary">
+        View Resume
+      </a>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p>Designed & Built by <span style="color:var(--blue3)">Your Name</span> · 2025</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
